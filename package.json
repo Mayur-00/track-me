@@ -4,7 +4,7 @@
   "description": "Real Time Location Tracker ",
   "main": "app.js",
   "scripts": {
-    "mayur": "vite"
+    "start": "vite"
   },
   "author": "Mayur-00",
   "license": "ISC",
