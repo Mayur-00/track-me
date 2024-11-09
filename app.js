@@ -1,7 +1,11 @@
 import express  from'express';
+import dotenv from "dotenv"
 import http from 'http';
 import { Server } from'socket.io';
 import path from"path"
+dotenv.config()
+
+const port = process.env.PORT || 3000
 
 const app = express();
 const server = http.createServer(app);
@@ -23,5 +27,5 @@ app.get("/", (req,res)=>{
     res.render("index")
 })
 
-server.listen(3000, () => {
+server.listen(`${port}`, () => {
 });
